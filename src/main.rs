@@ -27,8 +27,8 @@ fn main() {
     // Mix Ben's secret with Amy's mix, this is kept private.
     let ben_final = ben.mix(public.prime, public.amy.unwrap());
 
-    println!("Amy = {}", amy_final);
-    println!("Ben = {}", ben_final);
+    println!("{} = {}", amy.name, amy_final);
+    println!("{} = {}", ben.name, ben_final);
     println!("");
     println!(
         "Public = {}, {}, {}, {}",
