@@ -19,7 +19,7 @@ fn brute_force_root() -> u64 {
 
 fn brute_force_prime(root: u64) -> u64 {
     let mut pset = PrimeSet::new();
-    let (_, prime) = pset.iter().enumerate().skip(root as usize).next().unwrap();
+    let prime: u64 = pset.iter().skip(root as usize).next().unwrap();
 
     return prime;
 }
