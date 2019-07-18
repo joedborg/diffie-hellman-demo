@@ -1,0 +1,9 @@
+[package]
+name = "diffie-hellman-demo"
+version = "0.0.1"
+authors = ["Joe Borg <joe@josephb.org>"]
+edition = "2018"
+
+[dependencies]
+primes = "0.2.3"
+rand = "0.7"
