@@ -10,6 +10,10 @@ pub struct Person {
 
 impl Person {
     pub fn mix(&self, prime: u64, root: u64) -> u64 {
+        // This should be power, not multiply, but
+        // it'd fill u64.  The maths still works, it's
+        // just not as secure as power.  Will need to 
+        // convert this to BigInt.
         return root * self.secret % prime;
     }
 }
