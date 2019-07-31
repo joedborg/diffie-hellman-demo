@@ -1,6 +1,3 @@
-extern crate primes;
-extern crate rand;
-
 use primes::PrimeSet;
 use rand::Rng;
 
